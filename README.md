@@ -7,10 +7,6 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 ## Phase I: Baseline & Historical Recovery
 **Objective:** Establish the "Laminar" (fluid) ground state of the vacuum before modern turbulence.
 
-### `vortex_hunter_1950s.py` (§10.3)
-* **Function:** Specifically designed to ingest and normalize legacy CDDIS format archives from the mid-90s (e.g., `moon.9503`).
-* **Result:** Established the 1995 primary resonance at $451.6 \pm 1.2$ c/y, providing the "transparent vacuum" control group.
-
 ### `vortex_hunter.py` (§10.3)
 * **Function:** The core diagnostic engine. It performs spectral audits of post-2000 data to track frequency migration.
 * **Result:** Detected the 7.4% elevation in resonance ($486.86 \pm 1.2$ c/y), interpreted as the structural "stiffening" of the SS-BEC manifold.
