@@ -1,4 +1,7 @@
-# CH-Lunar Resonance Model: Forensic Pipeline Documentation
+# Quantized Orbital Refraction in a Super-Solid Vacuum: A Multi-Decadal Forensic Audit of the 2008–2009 Phase-Slip and Persistent Crystalline
+# Stasis.
+
+## Forensic Pipeline Documentation
 
 This document provides a comprehensive overview of the scripts, diagnostics, and simulations used to establish the Super-Solid Bose-Einstein Condensate (SS-BEC) vacuum model and verify the 2009 topological phase-slip. To make the most of this, follow our paper "Quantized Orbital Refraction in a Super-Solid Vacuum" to replicate the steps and results.
 
