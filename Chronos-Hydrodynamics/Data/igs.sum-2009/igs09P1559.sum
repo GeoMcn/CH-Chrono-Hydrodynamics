@@ -1,0 +1,342 @@
+Author:  R. Ferland, M. Piraszewski
+
+===============================================================
+ Combined AC solution for GPS week 1559 - 09/11/22 to 09/11/28
+===============================================================
+
+1) Contacts:
+============
+e-mail: rferland@nrcan.gc.ca
+Tel:    (613)995-4002 (Remi Ferland)
+Fax:    (613)995-3215
+
+2) Products:
+============
+All products are available at:
+  CDDIS (cddis.gsfc.nasa.gov) and SOPAC (garner.ucsd.edu)
+
+igs09P1559.snx  Combined weekly solution. 
+igs09P1559.erp  Daily Earth Rotation Parameters.
+igs00p03.erp    Daily Earth Rotation Parameters since GPS week 860. 
+IGS09P47.snx    Cumulative Combined solution. 
+igs09P1559.sum  This file.
+igs09P1559.itr  Residuals between the AC and the IGS05 for the RF stations. 
+igs09P1559.res  Residuals between the AC and the Combined Weekly solution.
+IGS09P47.res    Residuals between the AC and the Cumulative Combined solution.
+ 
+Where IGSyyPww & igsyyPwwww represent:
+      yy      Last 2 digits of the year
+      ww      week in year yy
+      wwww    GPS week
+      P       GPS technique used
+ 
+
+3) Combination Strategy:
+========================
+
+     The AC solutions are processed using the following procedure:
+
+3-1) The AC solutions are checked/corrected for possible format problems,
+     station names inconsistencies, etc...
+3-2) The AC solutions are unconstrained according to the information provided
+     in the SOLUTION/APRIORI Block.
+3-3) The AC solutions are aligned (using a 7-parameters) and compared to the
+     IGS05 stations at the current epoch.
+     ftp://igscb.jpl.nasa.gov/igscb/station/coord/IGS05.snx
+3-4) The AC are compared to IGS05, to each other, to the previous week
+     solution and to the cumulative solution in order to identify and remove
+     outliers.
+3-5) The weekly AC solutions are combined and added to the cumulative
+     combined solution. The cumulative combination is done to ensures 14
+     parameters singularity.
+
+     The weekly combined solution is aligned to the IGS05 of the current
+     epoch using a 7-parameters transformation. The singular cumulative
+     combined solution is aligned to the IGS05 of the reference epoch
+     using a 14-parameters transformation and the 132 ITRF station positions
+     and velocities. The IGS05 is a realization of ITRF2005.
+
+     For more details, see:
+     Blewitt, G., C. Boucher and J. Kouba, 1997, Procedure for ITRF continuous
+       realization, the report of the IGS GB, presented to the IGS Governing
+       Board Meeting held in San Francisco, Dec. 11.
+     Kouba, J., J. Ray and M.M. Watkins, IGS Reference Frame Realization, 1998
+       IGS Analysis Center Workshop Proceedings, European Space Operations
+       Centre, Darmstadt, Germany.
+
+The combination software was developed at NRCan.
+
+4) Remarks:
+===========
+
+     ITR = IGS05.snx
+     igs = igs09P1559.snx
+     IGS = IGS09P47.snx
+
+     MIT = mit15597.snx
+     mit = mit1559g.snx
+
+     BuA = IERS Bulletin A
+
+     grg mit ncl are used to quality control the weekly combination.
+     gfz excluded from the geocenter estimation (Sec. 5-4).
+
+     Solutions with manual station deletion:
+         From the original solution:
+             cod  SATA  X  Y  Z
+             emr  SATA  X  Y  Z
+             esa  SATA  X  Y  Z
+             gfz  SATA  X  Y  Z
+             MIT  SATA  X  Y  Z
+             sio  SATA  X  Y  Z
+             mit  SATA  X  Y  Z
+         After unconstraining:
+             grg  ALGO  ASPA  YKRO
+
+     4-1) Starting with GPS week 1400, the solutions are aligned to the
+          IGS05.snx realization of ITRF2005.
+
+     4-2) Starting with GPS week 1078, UT1-UTC from IERS Bulletin A
+          is included in the erp files.
+
+     4-3) Starting with GPS week 1412, the accumulated ERP file has been
+          changed from "igs00p02.erp" to "igs00p03.erp". The main changes
+          are:
+       1) Correction of the pole position from IGb00 to IGS05 using the
+          transformation in:
+             http://igscb.jpl.nasa.gov/mail/igsmail/2006/msg00178.html
+       2) Marginal ERP's in GPS week 1161 were replaced by reprocessed
+          values.
+
+5) Results:
+===========
+
+5-1)      AC (Variance Factor)^0.5 estimates:
+=============================================
+           The residuals used in the estimation of the Variance Factor
+           are the differences between the cumulative combined solution
+           and each AC weekly solution.
+           SF = (Variance Factor)^0.5 = (Chi^2/dof)^0.5
+           Final(SF) = Apriori(SF) * Aposteriori(SF)
+
+Solution       |# sta| #RF |    Apriori(SF)|Aposteriori(SF)|      Final(SF)|
+---------------|-----|-----|---------------|---------------|---------------|
+cod            | 224 |  67 |        24.315 |         1.000 |        24.314 |
+emr            |  82 |  42 |         6.204 |         1.000 |         6.204 |
+esa            | 126 |  40 |         5.641 |         1.000 |         5.641 |
+gfz            | 192 |  66 |        14.680 |         1.000 |        14.680 |
+jpl            | 124 |  49 |        10.352 |         1.000 |        10.351 |
+MIT            | 244 |  71 |         2.448 |         1.000 |         2.448 |
+ngs            | 218 |  71 |        41.457 |         1.000 |        41.456 |
+sio            | 257 |  70 |         2.332 |         1.000 |         2.332 |
+grg            | 106 |  45 |        10.458 |         1.000 |        10.458 |
+mit            | 403 |  68 |         1.909 |         0.998 |         1.906 |
+ncl            | 219 |  73 |         0.462 |         1.000 |         0.462 |
+igs            | 357 |  72 |         1.521 |         1.000 |         1.521 |
+---------------|-----|-----|---------------|---------------|---------------|
+
+5-2)      Solution Residuals weighted Average & STD:
+====================================================
+
+5-2-1)    With respect to the IGS05 stations:
+=============================================
+
+Solution       |  Weighted Average (mm)    |          STD (mm)         |
+               |      N        E        U  |      N        E        U  |
+---------------|---------------------------|---------------------------|
+cod         66 |     0.0      0.2     -0.1 |     3.4      3.2      7.5 |
+emr         42 |     0.4      0.2     -0.2 |     4.1      3.9      7.5 |
+esa         40 |     0.1     -0.2      0.1 |     3.9      3.5      8.4 |
+gfz         65 |     0.7      0.1     -0.3 |     3.1      3.1      7.6 |
+jpl         49 |     0.4      0.1      0.1 |     3.7      3.5      7.2 |
+MIT         70 |     0.9      0.1     -0.4 |     2.8      3.2      7.2 |
+ngs         71 |     1.0      0.1      0.1 |     3.4      3.3      7.6 |
+sio         69 |     0.4      0.1     -0.4 |     3.3      3.4      7.1 |
+grg         45 |     0.4      0.0      0.3 |     4.8      3.6      7.3 |
+mit         66 |     0.8      0.1     -0.3 |     2.7      3.0      6.9 |
+ncl         72 |     0.5      0.1     -0.3 |     3.2      3.2      7.3 |
+---------------|---------------------------|---------------------------|
+
+5-2-2)    With respect to the Weekly Combination:
+=================================================
+
+Solution       |  Weighted Average (mm)    |          STD (mm)         |
+               |      N        E        U  |      N        E        U  |
+---------------|---------------------------|---------------------------|
+cod        210 |    -0.6      0.0      0.7 |     1.1      1.1      3.2 |
+emr         79 |     0.0      0.1     -1.0 |     2.0      1.4      3.7 |
+esa        117 |    -0.4     -0.2      1.4 |     2.8      1.3      4.3 |
+gfz        186 |     0.0      0.3     -0.4 |     0.6      0.6      2.4 |
+jpl        118 |     0.0     -0.2     -1.5 |     1.6      2.7      5.6 |
+MIT        222 |     0.0     -0.1      0.4 |     0.6      0.7      2.0 |
+ngs        202 |     0.5     -0.1      0.2 |     1.4      2.3      3.3 |
+sio        248 |     0.2     -0.2     -0.1 |     1.3      0.9      2.3 |
+grg        100 |    -0.4     -0.1      0.6 |     4.1      2.9      5.3 |
+mit        349 |    -0.1      0.0     -0.5 |     0.3      0.6      1.2 |
+ncl        211 |    -0.1     -0.1     -0.3 |     0.6      0.7      1.7 |
+ITR         71 |    -0.5     -0.2      0.1 |     2.9      3.0      6.8 |
+---------------|---------------------------|---------------------------|
+
+5-2-3)    With respect to the Cumulative Combination:
+=====================================================
+
+Solution       |  Weighted Average (mm)    |          STD (mm)         |
+               |      N        E        U  |      N        E        U  |
+---------------|---------------------------|---------------------------|
+cod        190 |    -0.8     -0.1     -0.1 |     2.2      1.8      5.7 |
+emr         79 |    -0.8      0.0     -2.3 |     2.8      2.4      5.5 |
+esa        101 |    -1.0      0.1      0.1 |     3.2      2.6      5.5 |
+gfz        175 |    -0.4      0.2     -1.0 |     1.9      2.0      4.7 |
+jpl        116 |    -0.4     -0.3     -2.0 |     2.9      3.5      7.3 |
+MIT        201 |    -0.2     -0.1      0.1 |     1.8      1.9      4.7 |
+ngs        186 |     0.2     -0.1     -0.1 |     2.3      3.0      5.2 |
+sio        220 |     0.1     -0.3     -0.4 |     2.3      2.1      4.4 |
+grg        102 |    -0.6     -0.1     -0.2 |     4.2      3.6      6.5 |
+mit        277 |    -0.3     -0.1     -0.9 |     1.7      1.8      4.3 |
+ncl        202 |    -0.4     -0.2     -1.0 |     1.9      1.7      4.5 |
+igs        278 |    -0.1     -0.1     -0.3 |     1.6      1.6      4.1 |
+ITR        112 |    -0.8     -0.1     -0.1 |     2.6      2.8     10.1 |
+---------------|---------------------------|---------------------------|
+
+5-3)      7-Parameters Transformation: AC ----> IGS05.snx
+=========================================================
+
+5-3-1)    Estimates:
+====================
+
+Solution       |    R X      R Y      R Z      T X      T Y      T Z      SCL  |
+               |   (mas)    (mas)    (mas)     (mm)     (mm)     (mm)    (ppb) |
+---------------|---------------------------------------------------------------|
+cod            |  -0.018   -0.013   -0.019      0.4      1.3      0.3    -0.23 |
+emr            |   0.045    0.009    0.047      6.0      0.2      1.4     0.30 |
+esa            |   0.029   -0.047    0.076      6.5      1.2     -2.5    -0.14 |
+gfz            |   0.004   -0.021   -0.005      0.5      1.3      0.9    -0.10 |
+jpl            |   0.009   -0.049    0.000      0.5      8.0      6.5     0.30 |
+MIT            |  -0.004    0.013   -0.046      0.2     -3.4      0.4    -0.19 |
+ngs            |  -0.079   -0.064    0.008      3.8     -5.5     -5.1    -0.10 |
+sio            |   0.019   -0.059    0.037      2.5      1.7     -9.7     0.12 |
+grg            |   0.017    0.041    0.007      3.4      7.3      9.7     0.42 |
+mit            |   0.001    0.019   -0.007     -1.1      1.4      0.4    -0.07 |
+ncl            |   0.003    0.042    0.053      0.1      0.2      1.7    -0.04 |
+igs            |   0.000    0.000    0.000      0.0      0.0      0.0    -0.01 |
+---------------|---------------------------------------------------------------|
+
+5-3-2)    STD:
+==============
+
+Solution       |    R X      R Y      R Z      T X      T Y      T Z      SCL  |
+               |   (mas)    (mas)    (mas)     (mm)     (mm)     (mm)    (ppb) |
+---------------|---------------------------------------------------------------|
+cod            |   0.049    0.050    0.055      1.3      1.3      1.3     0.20 |
+emr            |   0.058    0.064    0.069      1.6      1.6      1.6     0.25 |
+esa            |   0.060    0.066    0.069      1.6      1.6      1.6     0.25 |
+gfz            |   0.049    0.051    0.054      1.3      1.3      1.3     0.20 |
+jpl            |   0.055    0.058    0.063      1.5      1.5      1.5     0.23 |
+MIT            |   0.048    0.049    0.053      1.3      1.3      1.2     0.20 |
+ngs            |   0.047    0.049    0.053      1.3      1.3      1.2     0.19 |
+sio            |   0.047    0.050    0.053      1.3      1.3      1.3     0.20 |
+grg            |   0.057    0.061    0.067      1.6      1.5      1.5     0.24 |
+mit            |   0.048    0.050    0.055      1.3      1.3      1.3     0.20 |
+ncl            |   0.047    0.049    0.052      1.3      1.2      1.2     0.19 |
+igs            |   0.000    0.000    0.000      0.0      0.0      0.0     0.22 |
+---------------|---------------------------------------------------------------|
+
+5-4)      Geocenter:
+====================
+
+               |      X        Y        Z  |    s X      s Y      s Z  |
+               |    (mm)     (mm)     (mm) |    (mm)     (mm)     (mm) |
+---------------|---------------------------|---------------------------|
+igs            |     2.8     -2.8     -4.6 |     1.1      0.8      2.6 |
+---------------|---------------------------|---------------------------|
+
+5-5)      ERP Residuals Weighted Average & STD:
+===============================================
+
+5-5-1)    Weighted Average:
+===========================
+
+Solution       |      UT       LOD       XPO      XPOR       YPO      YPOR  |
+               |      us        us    .01mas    .01ma/d   .01mas    .01ma/d |
+---------------|------------------------------------------------------------|
+cod            |     ---        ---       ---       ---       ---       --- |
+emr            |     ---       -3.6       2.3       4.2      -1.0      -6.4 |
+esa            |     ---       -4.2      -1.6       3.2       1.9       7.4 |
+gfz            |     ---        8.5       3.1       7.0      -0.6       6.1 |
+jpl            |     ---       -1.9       4.4      -6.9       0.2      19.2 |
+MIT            |     ---        0.5      -4.9      -3.0       2.8     -21.0 |
+ngs            |     ---       -6.3       6.1       3.2      -0.3      -6.4 |
+sio            |     ---       -4.1       1.7       ---       0.7       --- |
+grg            |     ---      -14.4       1.3       8.9      -1.1      20.3 |
+mit            |     ---       -4.9       0.6      19.4       0.1      12.9 |
+ncl            |     ---        ---       ---       ---       ---       --- |
+ITR            |     ---        ---       ---       ---       ---       --- |
+BuA            |     ---       -6.0       4.4       1.3       3.2      19.0 |
+---------------|------------------------------------------------------------|
+
+5-5-2)    STD:
+==============
+
+Solution       |      UT       LOD       XPO      XPOR       YPO      YPOR  |
+               |      us        us    .01mas    .01ma/d   .01mas    .01ma/d |
+---------------|------------------------------------------------------------|
+cod            |     ---        ---       ---       ---       ---       --- |
+emr            |     ---       10.2       1.1       7.2       3.0       9.4 |
+esa            |     ---        9.9       2.5      11.1       3.4      13.5 |
+gfz            |     ---        4.5       1.7       3.3       1.0       3.6 |
+jpl            |     ---       12.9       2.0       6.3       0.8      11.4 |
+MIT            |     ---        2.6       1.0       3.7       0.9       5.4 |
+ngs            |     ---        7.1       1.9      11.7       5.9       5.9 |
+sio            |     ---        0.9       1.4       ---       1.1       --- |
+grg            |     ---       16.6       5.3       7.1       2.4      13.4 |
+mit            |     ---        2.5       1.4       3.7       1.0       4.6 |
+ncl            |     ---        ---       ---       ---       ---       --- |
+ITR            |     ---        ---       ---       ---       ---       --- |
+BuA            |     ---        4.8       4.1       8.5       6.0      11.0 |
+---------------|------------------------------------------------------------|
+
+5-6)      Satellite Antenna Offset Residuals weighted Average & STD:
+====================================================================
+          No Satellite phase center ... 
+
+5-7)      Outliers:
+===================
+
+Thresholds set at 5 sigmas and 50 mm.
+
+ Solution             Solution           |  Station   |    N       E       U  |
+              Minus                      |code id soln|   (mm)    (mm)    (mm)|
+-----------------------------------------|------------|-----------------------|
+                                         |            |                       |
+ITRF_IGS05.snx       gfz15597.snx        |ALRT  A    1|   -9.3     5.4    -2.2|
+                                         |            |                       |
+ITRF_IGS05.snx       MIT15597.snx        |ALRT  A    1|   -9.9     5.4    -4.8|
+ITRF_IGS05.snx       MIT15597.snx        |GOLD  A    7|   -3.3     0.7    16.6|
+                                         |            |                       |
+ITRF_IGS05.snx       mit1559g.snx        |ALRT  A    1|   -9.2     5.6    -1.6|
+ITRF_IGS05.snx       mit1559g.snx        |ISPA  A    1|   -4.3     8.5    -9.0|
+                                         |            |                       |
+IGS09P46.snx         cod15597.snx        |PERT  A    4|  -13.6     7.9    -6.9|
+                                         |            |                       |
+IGS09P46.snx         gfz15597.snx        |PERT  A    4|  -10.6     8.5     4.6|
+                                         |            |                       |
+IGS09P46.snx         MIT15597.snx        |NETT  A    1|    5.0   -13.5    26.5|
+IGS09P46.snx         MIT15597.snx        |PERT  A    4|  -13.5     7.5    -4.7|
+                                         |            |                       |
+IGS09P46.snx         sio15597.snx        |PERT  A    4|  -17.4     8.7    -3.5|
+                                         |            |                       |
+IGS09P46.snx         mit1559g.snx        |DGAR  A    1|  -11.7   -13.0     0.9|
+IGS09P46.snx         mit1559g.snx        |MAC1  A    4|  -11.0    -4.7    -3.3|
+IGS09P46.snx         mit1559g.snx        |PERT  A    4|  -12.2     7.1    -1.9|
+IGS09P46.snx         mit1559g.snx        |WUHN  A    4|   -9.3    -2.9    -2.7|
+                                         |            |                       |
+IGS09P46.snx         ncl1559g.snx        |PERT  A    4|  -14.0     7.6    -6.3|
+                                         |            |                       |
+IGS09P46.snx         igs09P1559.snx      |DUBO  A    4|    1.3     0.0   -13.5|
+IGS09P46.snx         igs09P1559.snx      |KOUR  A    2|   -5.5     0.7   -12.0|
+IGS09P46.snx         igs09P1559.snx      |MDO1  A    3|    5.2    -5.2    -0.8|
+IGS09P46.snx         igs09P1559.snx      |PERT  A    4|  -12.0     7.8    -1.7|
+IGS09P46.snx         igs09P1559.snx      |SSIA  A    4|   -6.0     1.6     1.1|
+IGS09P46.snx         igs09P1559.snx      |TWTF  A    2|   -7.3     2.2     5.0|
+IGS09P46.snx         igs09P1559.snx      |UNSA  A    1|   -3.0    10.0    -1.9|
+-----------------------------------------|------------|-----------------------|

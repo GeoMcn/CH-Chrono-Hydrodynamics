@@ -1,0 +1,42 @@
+==============================================================================
+ESA/ESOC Earth Rotation Parameters for Week of 11 May - 17 May 1997
+==============================================================================
+Field Contents
+   1   MJD      modified Julian day
+   2   Xpole    10**-5 arcsec
+   2   Ypole    10**-5 arcsec
+   4   UT1-UTC  10**-6 sec
+   5   LOD      10**-6 ms/day
+   6   Xps      Xpole sigma, 10**-5 arcsec
+   7   Yps      Ypole sigma, 10**-5 arcsec
+   8   UT1s     UT1-UTC sigma, 10**-6 sec
+   9   LODs     LOD sigma, 10**-6 sec/day
+  10   Nr       number of receivers in the solution
+  11   Nf       number of receivers with "fixed" coordinates
+  12   Nt       number of satellites (transmitters) in the solution
+  13   Xprt     Xpole rate, 10**-5 arcsec/day
+  14   Yprt     Ypole rate, 10**-5 arcsec/day
+  15   Xrs      Xpole rate sigma, 10**-5 arcsec
+  16   Yrs      Ypole rate sigma, 10**-5 arcsec
+  17   XYc      Xp - Yp Correlation
+  18   XTc      Xp - UT1-UTC Correlation
+  19   YTc      Yp - UT1-UTC Correlation
+  20   XXrc     Xp - Xprate Correlation
+  21   YYrc     Yp - Yprate Correlation
+  22   TLc      UT1-UTC - LOD Correlation
+
+ The Ray subdiurnal/diurnal tidal corrections were used in the estimation of these mean daily values.
+
+ ESOC ERP TABLE                                          (1997 May 11 - May 17)
+   MJD    Xpole  Ypole UT1-UTC   LOD  Xps  Yps   UT1s  LODs  Nr Nf Nt  Xprt  Yprt   Xrs  Yrs    XYc   XTc   YTc  XXrc  YYrc   TLc
+              e-5"       us     us/d    e-5"      us   us/d              e-5"/d      e-5"/d
+======== ====== ====== ======= ===== ==== ==== ====== ====== == == == ===== ===== ===== ===== ===== ===== ===== ===== ===== =====
+50579.50 -13465  46302 -385926  1953    4    5      7      6 55 12 25   246   255    10    11  0.00  0.00  0.00  0.02  0.00 -0.40
+50580.50 -13238  46577 -387979  1958    4    4      7      6 54 12 25   259   206    10    10  0.01  0.00 -0.01  0.01 -0.02 -0.40
+50581.50 -13040  46815 -389992  1925    4    4      7      5 54 12 25   185   173     9     9 -0.01  0.01  0.01  0.04  0.01 -0.37
+50582.50 -12836  47058 -392165  1951    4    4      7      5 54 12 25   220   181     9     9 -0.02 -0.01  0.01  0.00 -0.02 -0.39
+50583.50 -12627  47293 -394364  1989    4    4      7      5 55 12 25   242   182     9     9 -0.03  0.00 -0.01  0.02  0.04 -0.39
+50584.50 -12343  47509 -396395  2009    4    5      7      6 51 10 25   304   202    10    10 -0.10  0.00  0.00  0.00  0.00 -0.39
+50585.50 -12076  47694 -398452  2064    4    5      8      6 56 13 25   294   165    11    11 -0.05 -0.01  0.00 -0.01  0.00 -0.40
+END ERP FILE
+==============================================================================

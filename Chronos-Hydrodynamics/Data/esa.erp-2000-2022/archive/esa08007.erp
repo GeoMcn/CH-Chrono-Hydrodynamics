@@ -1,0 +1,41 @@
+ ==============================================================================                                                     
+ ESA/ESOC Earth Rotation Parameters for Week of 07 May - 13 May 1995                                                                
+ ==============================================================================                                                     
+ Field Contents (Sigma of 0 indicates parameter not estimated)                                                                      
+   1   MJD      modified Julian day, with 0.01-day precision                                                                        
+   2   Xpole    10**-5 arcsec, 0.00001-arcsec precision                                                                             
+   2   Ypole    10**-5 arcsec, 0.00001-arcsec precision                                                                             
+   4   UT1-UTC  10**-6 sec, 0.000001-sec precision (usec)                                                                           
+   5   LODR     10**-6 ms/day, 0.001-ms/day precision (us/day)                                                                      
+   6   Xsig     10**-5 arcsec, 0.00001-arcsec precision                                                                             
+   7   Ysig     10**-5 arcsec, 0.00001-arcsec precision                                                                             
+   8   UTsig    10**-6 sec, 0.000001-sec precision (usec)                                                                           
+   9   LODRsg   10**-6 sec/day, 0.001-ms/day precision (us/day)                                                                     
+  10   Nr       number of receivers in the solution                                                                                 
+  11   Nf       number of receivers with "fixed" coordinates                                                                        
+  12   Nt       number of satellites (transmitters) in the solution                                                                 
+  13   XYCorr   X-Y    Correlation 0.01 precision                                                                                   
+  14   XLODRC   X-LODR Correlation 0.01 precision                                                                                   
+  15   YLODRC   Y-LODR Correlation 0.01 precision                                                                                   
+ erp values are estimated constant for every 24 hour interval.                                                                      
+                                                                                                                                    
+ ESOC ERP TABLE                                          (1995 May 07 - May 13)                                                     
+   MJD     Xpole   Ypole UT1-UTC LODR  Xsig Ysig UTsig LODRsg Nr Nf Nt XYCorr                                                       
+ XLODRC YLODRC                                                                                                                      
+         10**-5" 10**-5"    usec us/d    10**-5"   us us/d                                                                          
+ 49844.50  15711   53452   55910 2580     5    5    0    8    37 13 25 -0.05                                                        
+  0.01  -0.03                                                                                                                       
+ 49845.50  16119   53299   53195 2482     6    6    0   10    35 13 25  0.07                                                        
+  0.02  -0.02                                                                                                                       
+ 49846.50  16595   53174   50560 2550     6    6    0    9    37 13 25  0.04                                                        
+ -0.03  -0.03                                                                                                                       
+ 49847.50  16947   52964   48034 2564     9    9    0   15    37 13 25 -0.02                                                        
+  0.04  -0.03                                                                                                                       
+ 49848.50  17298   52847   45626 2499     7    7    0   12    38 13 25 -0.11                                                        
+  0.03   0.00                                                                                                                       
+ 49849.50  17589   52662   43287 2500     6    6    0   10    36 13 25 -0.01                                                        
+  0.03  -0.02                                                                                                                       
+ 49850.50  17925   52530   40972 2530     6    6    0   10    37 13 25 -0.05                                                        
+  0.03  -0.01                                                                                                                       
+ END ERP FILE                                                                                                                       
+ ==============================================================================                                                     

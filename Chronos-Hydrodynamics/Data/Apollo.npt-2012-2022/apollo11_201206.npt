@@ -1,0 +1,37 @@
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  6 14 11 31  9 2012  6 14 11 35 15  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11 41600.0000000 2.6622517576931 std1 2  246.0    160      24.9  -1.000  -1.000      -1.0 212.3 15
+20 41600.000  727.92 288.21   42 0
+40 41600.0000000 0 std1 5237 2740 -1.000 0.0 0.0    3.3 -1.000 -1.000 -1.0 3 0 15
+50 std1   24.9 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120614e.r0.s05000.t01.y169.n160
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2013  3 14 13
+h2 GRSM       7845 78  1  4
+h3 Apollo11        100  100          0 2
+h4  1 2012  6 15  5 18  7 2012  6 15  5 29  6  0 0 0 0 1 0 2 0
+c0 0    532.1   me09 las6 det1 tim2
+c1 0 las6     Nd-Yag    1064.2       10.       240.    150.   0.      1
+c2 0 det1   spad_SSO    532.1    20.   256.  100.         ECL 999.9  0.12  60.0   7.0 none
+c3 0 tim2            maser_T4S            maser_T4S             Dassault              unknown    0.0
+60 me09 8 2
+40 18735.63           0 me09      168      160   3.716    76311.3      0.0    78   0.000   0.000    0.0 3 3 0
+20 19084.              878.53 286.74   51 0
+11 19399.813215629100     2.664017126072 me09 2  659.6    33     233.4   -.100   -1.300       0.0   1.1 0
+50 me09  233.4  -1.000  -1.000   -1.0 1
+H8
+H9 

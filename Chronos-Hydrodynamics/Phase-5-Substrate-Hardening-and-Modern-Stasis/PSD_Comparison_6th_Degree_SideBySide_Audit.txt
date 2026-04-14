@@ -1,0 +1,31 @@
+
+--- INITIATING 2000 LATTICE AUDIT (6TH-DEGREE) ---
+Reading: cod10600.clk (from cod.clk-2000-2022)
+Reading: cod10601.clk (from cod.clk-2000-2022)
+Reading: cod10602.clk (from cod.clk-2000-2022)
+Reading: cod10603.clk (from cod.clk-2000-2022)
+Reading: cod10604.clk (from cod.clk-2000-2022)
+Reading: cod10605.clk (from cod.clk-2000-2022)
+Reading: cod10606.clk (from cod.clk-2000-2022)
+Saved Forensic Graph: PSD_Comparison_6th_Degree_Plot_2000.png
+
+--- INITIATING 2009 LATTICE AUDIT (6TH-DEGREE) ---
+Reading: cod15590.clk (from cod.clk-2000-2022)
+Reading: cod15591.clk (from cod.clk-2000-2022)
+Reading: cod15592.clk (from cod.clk-2000-2022)
+Reading: cod15593.clk (from cod.clk-2000-2022)
+Reading: cod15594.clk (from cod.clk-2000-2022)
+Reading: cod15595.clk (from cod.clk-2000-2022)
+Reading: cod15596.clk (from cod.clk-2000-2022)
+Saved Forensic Graph: PSD_Comparison_6th_Degree_Plot_2009.png
+
+======================================================================
+SATELLITE       | 2000 VARIANCE (ns^2)      | 2009 VARIANCE (ns^2)     
+----------------------------------------------------------------------
+G25             | 2.11e-15                  | 1.03e-18                 
+G03             | 2.74e-10                  | 8.10e-18                 
+======================================================================
+CH-FORENSIC RESULT: G25 RIGIDITY INCREASE: 2044.32x
+Final 2009 Phase-Lock Ratio (G25/G03): 0.1276
+
+FULL REPORT SAVED TO: PSD_Comparison_6th_Degree_SideBySide_Audit.txt

@@ -1,0 +1,39 @@
+version 2 ESA/ESOC EOP file
+================================================================================
+ESA/ESOC Rapid Earth Rotation Parameters for Week of 12 Jul - 18 Jul 1998
+================================================================================
+Field Contents
+   1   MJD      modified Julian day
+   2   Xpole    10**-6 arcsec
+   2   Ypole    10**-6 arcsec
+   4   UT1-UTC  10**-7 sec
+   5   LOD      10**-7 s/day
+   6   Xps      Xpole sigma, 10**-6 arcsec
+   7   Yps      Ypole sigma, 10**-6 arcsec
+   8   UT1s     UT1-UTC sigma, 10**-7 sec
+   9   LODs     LOD sigma, 10**-7 sec/day
+  10   Nr       number of receivers in the solution
+  11   Nf       number of receivers with constrained coordinates
+  12   Nt       number of satellites (transmitters) in the solution
+  13   Xrt      Xpole rate, 10**-6 arcsec/day
+  14   Yrt      Ypole rate, 10**-6 arcsec/day
+  15   Xrs      Xpole rate sigma, 10**-6 arcsec
+  16   Yrs      Ypole rate sigma, 10**-6 arcsec
+  17   XYc      Xp - Yp Correlation
+  18   XTc      Xp - UT1-UTC Correlation
+  19   YTc      Yp - UT1-UTC Correlation
+  20   XXrc     Xp - Xprate Correlation
+  21   YYrc     Yp - Yprate Correlation
+  22   TLc      UT1-UTC - LOD Correlation
+
+ The Ray subdiurnal/diurnal tidal corrections were used in the estimation of these mean daily values.
+
+   MJD     Xpole   Ypole   UT1-UTC  LOD  Xps  Yps   UT1s  LODs  Nr Nf Nt  Xprt  Yprt   Xrs  Yrs    XYc   XTc   YTc  XXrc  YYrc   TLc
+          10**-6" 10**-6"  0.1 us .1 us/d   10**-6"  .1 us .1 us/d           10**-6"/d  10**-6"/d
+51006.50  -38681  457110 -1038300  5199   36   37     73     64 49 34 27  2198   658   111   113 -0.04 -0.01 -0.01 -0.01 -0.04 -0.43
+51007.50  -36518  458458 -1043899  6998   35   36     78     62 49 34 27  2155   524   110   110 -0.02  0.00  0.01  0.01 -0.03 -0.40
+51008.50  -33826  459884 -1050344  7288   33   34     75     57 49 34 27  2280   515   107   105 -0.07 -0.01  0.00  0.02  0.03 -0.38
+51009.50  -31833  461283 -1057652  7705   33   35     74     59 49 35 27  2514   838   105   108 -0.10  0.00  0.00  0.01 -0.03 -0.39
+51010.50  -29458  462371 -1064272  6945   36   36     76     64 50 34 27  1387  -254   112   108 -0.07  0.00 -0.01  0.06 -0.03 -0.42
+51011.50  -27117  463116 -1070152  5505   35   34     72     57 50 34 27  1587    92   107   107 -0.05 -0.01 -0.01  0.01  0.00 -0.40
+51012.50  -25263  463627 -1075173  4345   35   35     76     59 50 33 27  1903   302   116   110 -0.09  0.00 -0.01  0.05  0.02 -0.39

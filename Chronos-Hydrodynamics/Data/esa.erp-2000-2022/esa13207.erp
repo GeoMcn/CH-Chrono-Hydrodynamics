@@ -1,0 +1,39 @@
+version 2 ESA/ESOC EOP file produced by batusi
+================================================================================
+ESA/ESOC Earth Rotation Parameters from 24/04/2005 to 30/04/2005
+================================================================================
+Field Contents
+   1   MJD      modified Julian day
+   2   Xpole    10**-6 arcsec
+   2   Ypole    10**-6 arcsec
+   4   UT1-UTC  10**-7 sec
+   5   LOD      10**-7 s/day
+   6   Xps      Xpole sigma, 10**-6 arcsec
+   7   Yps      Ypole sigma, 10**-6 arcsec
+   8   UT1s     UT1-UTC sigma, 10**-7 sec
+   9   LODs     LOD sigma, 10**-7 sec/day
+  10   Nr       number of receivers in the solution
+  11   Nf       number of receivers with constrained coordinates
+  12   Nt       number of satellites (transmitters) in the solution
+  13   Xrt      Xpole rate, 10**-6 arcsec/day
+  14   Yrt      Ypole rate, 10**-6 arcsec/day
+  15   Xrs      Xpole rate sigma, 10**-6 arcsec
+  16   Yrs      Ypole rate sigma, 10**-6 arcsec
+  17   XYc      Xp - Yp Correlation
+  18   XTc      Xp - UT1-UTC Correlation
+  19   YTc      Yp - UT1-UTC Correlation
+  20   XXrc     Xp - Xprate Correlation
+  21   YYrc     Yp - Yprate Correlation
+  22   TLc      UT1-UTC - LOD Correlation
+
+ The Ray subdiurnal/diurnal tidal corrections were used in the estimation of these mean daily values.
+
+   MJD     Xpole   Ypole   UT1-UTC  LOD  Xps  Yps   UT1s  LODs  Nr Nf Nt  Xprt  Yprt   Xrs  Yrs    XYc   XTc   YTc  XXrc  YYrc   TLc
+          10**-6" 10**-6"  0.1 us .1 us/d   10**-6"  .1 us .1 us/d           10**-6"/d  10**-6"/d
+53484.50  -58111  284369 -5923150 13111   16   18    10    79  72  98  0  -919  1706    34    38  0.06  0.00  0.00 -0.39 -0.44  0.00
+53485.50  -58714  286149 -5935282 11153   13   14    74    74  72  98  0  -287  1854    22    25  0.01  0.01 -0.01 -0.07 -0.06 -0.94
+53486.50  -58896  287813 -5944929  8142   13   14   140    71  72  98  0   -76  1474    21    24  0.02  0.01 -0.01  0.02  0.01 -0.89
+53487.50  -58727  289503 -5951964  5930   13   14   201    71  72  98  0   415  1906    21    24  0.02  0.00 -0.01 -0.01 -0.01 -0.84
+53488.50  -58191  291474 -5957080  4301   13   14   260    72  72  98  0   657  2036    21    24  0.02  0.00 -0.02  0.01  0.00 -0.81
+53489.50  -57533  293631 -5961491  4521   14   14   319    75  72  98  0   659  2279    22    25  0.03  0.00  0.00  0.03  0.05 -0.80
+53490.50  -57286  296268 -5966822  6140   15   17   380    81  72  98  0  -165  2994    32    36  0.05 -0.01 -0.02  0.35  0.39 -0.78

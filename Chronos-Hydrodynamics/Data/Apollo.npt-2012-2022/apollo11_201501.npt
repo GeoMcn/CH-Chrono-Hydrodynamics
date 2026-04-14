@@ -1,0 +1,118 @@
+h1 CRD  1 2015  1  1 17
+h2 GRSM       7845 78  1  4
+h3 apollo11        100  100          0 2
+h4  1 2015  1  1 17 38 34 2015  1  1 17 50 31  0 0 0 0 1 0 2 0
+c0 0    532.1   me09 las6 det1 tim2
+c1 0 las6     Nd-Yag    1064.2       10.       240.    150.   0.      1
+c2 0 det1   spad_SSO    532.1    20.   256.  100.         ECL 999.9  0.12  60.0   7.0 none      
+c3 0 tim2            maser_T4S            maser_T4S             Dassault              unknown    0.0
+60 me09 8 1
+40 63154.33           0 me09      423      400   3.716   104116.4      0.0    53.3   0.000   0.000    0.0 3 3 0
+20 63539.              884.05 276.85   42 0
+11 63886.507210781500     2.535428739386 me09 2  716.7    19     223.4  -1.300    .400       0.0   1.8 0
+40 66129.34           0 me09      129      123   3.716   104125.1      0.0    59.6   0.000   0.000    0.0 3 3 0
+20 66595.              884.65 277.84   37 0
+11 67042.253223747200     2.532133013917 me09 2  855.7    19     226.1   -.100   -.600       0.0   1.1 0
+50 me09  224.8  -1.000  -1.000   -1.0 1
+H8
+h1 CRD  1 2015  1 11  2
+h2 GRSM       7845 78  1  4
+h3 apollo11        100  100          0 2
+h4  1 2015  1 11  1 59 16 2015  1 11  2 13 52  0 0 0 0 1 0 2 0
+c0 0    532.1   me09 las6 det1 tim2
+c1 0 las6     Nd-Yag    1064.2       10.       240.    150.   0.      1
+c2 0 det1   spad_SSO    532.1    20.   256.  100.         ECL 999.9  0.12  60.0   7.0 none      
+c3 0 tim2            maser_T4S            maser_T4S             Dassault              unknown    0.0
+60 me09 8 1
+40  6697.16           0 me09      589      572   3.716   104116.2      0.0    81   0.000   0.000    0.0 3 3 0
+20  7281.              874.95 284.54   36 0
+11  7529.451010035580     2.660060585824 me09 2    876    10     100.4   -.100  -1.200       0.0  11.9 0
+40 12188.33           0 me09      492      474   3.716   104121.4      0.0    84.4   0.000   0.000    0.0 3 3 0
+20 12672.              874.55 284.54   36 0
+11 12954.917156448100     2.656425000542 me09 2  689.8    32     174.2   -.900   1.100       0.0  19.9 0
+50 me09  137.3  -1.000  -1.000   -1.0 1
+H8
+h1 CRD  1 2015  3 27  1
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2015  1 16 13 43 56 2015  1 16 13 46 21  0 0 0 0 1 0 2 0
+c0 0     532.0 std2 lpd apd3 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd3 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11 49505.0000000 2.5032916437029 std2 2  145.0    141      21.5  -1.000  -1.000      -1.0 355.7 15
+20 49505.000  729.47 275.90   13 0
+40 49505.0000000 0 std2 3264 1894 -1.000 0.0 0.0    3.8 -1.000 -1.000 -1.0 3 0 15
+50 std2   21.5 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 150116e.r0.s03000.t01.y156.n141
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 130930
+00 Channel by channel offsets (in ps):
+00 -27   4 -86  53 -34  -4   3 -45  46   9   1   5  28  -7   0 -18 
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 1.0 OR RSS value 0 (ps)
+h8
+h1 CRD  1 2015  3 27  1
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2015  1 26  0 52 44 2015  1 26  0 56 56  0 0 0 0 1 0 2 0
+c0 0     532.0 std2 lpd apd3 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd3 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  3275.0000000 2.4332434976831 std2 2  251.0    431      14.0  -1.000  -1.000      -1.0 304.4 15
+20  3275.000  729.32 277.25   15 0
+40  3275.0000000 0 std2 7787 4451 -1.000 0.0 0.0    2.3 -1.000 -1.000 -1.0 3 0 15
+50 std2   14.0 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 150126b.r0.s05000.t01.y536.n431
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 130930
+00 Channel by channel offsets (in ps):
+00 -27   4 -86  53 -34  -4   3 -45  46   9   1   5  28  -7   0 -18 
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 1.0 OR RSS value 0 (ps)
+h8
+h1 CRD  1 2015  3 27  1
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2015  1 26  1 20 39 2015  1 26  1 23  9  0 0 0 0 1 0 2 0
+c0 0     532.0 std2 lpd apd3 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd3 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  4925.0000000 2.4350224014787 std2 2  150.0     82      25.3  -1.000  -1.000      -1.0  97.6 15
+20  4925.000  729.71 277.25   15 0
+40  4925.0000000 0 std2 4624 2686 -1.000 0.0 0.0    3.0 -1.000 -1.000 -1.0 3 0 15
+50 std2   25.3 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 150126g.r0.s03000.t01.y84.n82
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 130930
+00 Channel by channel offsets (in ps):
+00 -27   4 -86  53 -34  -4   3 -45  46   9   1   5  28  -7   0 -18 
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 1.0 OR RSS value 0 (ps)
+h8
+h1 CRD  1 2015  1 27 17
+h2 GRSM       7845 78  1  4
+h3 apollo11        100  100          0 2
+h4  1 2015  1 27 16 59 35 2015  1 27 17 11  8  0 0 0 0 1 0 2 0
+c0 0    532.1   me09 las6 det1 tim2
+c1 0 las6     Nd-Yag    1064.2       10.       240.    150.   0.      1
+c2 0 det1   spad_SSO    532.1    20.   256.  100.         ECL 999.9  0.12  60.0   7.0 none      
+c3 0 tim2            maser_T4S            maser_T4S             Dassault              unknown    0.0
+60 me09 8 1
+40 60824.91           0 me09     1194     1149   3.716   101378.9      0.0    66.7   0.000   0.000    0.0 3 3 0
+20 61273.              867.65 273.64   46 0
+11 61573.895191564700     2.489686704157 me09 2  692.7    25     205.0   -.200   -.900       0.0   5.1 0
+40 70685.45           0 me09      839      823   3.716   101386.5      0.0    76.7   0.000   0.000    0.0 3 3 0
+20 71153.              868.55 272.74   60 0
+11 71341.357863869600     2.495974106434 me09 2  732.9    18     241.1     .000  -1.100       0.0   3.4 0
+50 me09  223.1  -1.000  -1.000   -1.0 1
+H8
+H9 

@@ -1,0 +1,155 @@
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5  2  2  5  4 2012  5  2  2  7 34  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  7590.0000000 2.4305786819088 std1 2  150.0    327      22.1  -1.000  -1.000      -1.0  40.8 15
+20  7590.000  725.26 286.10   16 0
+40  7590.0000000 0 std1 4941 2781 -1.000 0.0 0.0    3.3 -1.000 -1.000 -1.0 3 0 15
+50 std1   22.1 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120502d.r0.s03000.t01.y520.n327
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5  2  2 23 45 2012  5  2  2 26 16  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  8720.0000000 2.4292900911475 std1 2  150.0    489      44.0  -1.000  -1.000      -1.0  59.3 15
+20  8720.000  725.33 285.95   17 0
+40  8720.0000000 0 std1 5186 2951 -1.000 0.0 0.0    3.1 -1.000 -1.000 -1.0 3 0 15
+50 std1   44.0 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120502i.r0.s03000.t01.y962.n489
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5  5  7  4 34 2012  5  5  7  7  5  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11 25565.0000000 2.3484072189705 std1 2  151.0     73      30.3  -1.000  -1.000      -1.0   5.3 15
+20 25565.000  729.27 286.35   17 0
+40 25565.0000000 0 std1 5158 2831 -1.000 0.0 0.0    3.3 -1.000 -1.000 -1.0 3 0 15
+50 std1   30.3 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120505d.r0.s03000.t01.y87.n73
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5  5  7 38 12 2012  5  5  7 40 46  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11 27575.0000000 2.3497631903941 std1 2  154.0     94      32.5  -1.000  -1.000      -1.0   8.1 15
+20 27575.000  729.01 286.38   17 0
+40 27575.0000000 0 std1 5570 3022 -1.000 0.0 0.0    3.0 -1.000 -1.000 -1.0 3 0 15
+50 std1   32.5 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120505h.r0.s03050.t01.y102.n94
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5 15 11 25 47 2012  5 15 11 29 56  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11 41265.0000000 2.6307680602387 std1 2  249.0     74      34.2  -1.000  -1.000      -1.0 111.9 15
+20 41265.000  729.65 277.69   40 0
+40 41265.0000000 0 std1 6385 3591 -1.000 0.0 0.0    3.0 -1.000 -1.000 -1.0 3 0 15
+50 std1   34.2 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120515c.r0.s05000.t01.y76.n74
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5 25  2 28 18 2012  5 25  2 31 12  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  8980.0000000 2.6157916457436 std1 2  174.0    337      26.0  -1.000  -1.000      -1.0 723.2 15
+20  8980.000  723.40 289.32   22 0
+40  8980.0000000 0 std1 5999 3240 -1.000 0.0 0.0    3.0 -1.000 -1.000 -1.0 3 0 15
+50 std1   26.0 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120525c.r0.s03500.t01.y459.n337
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+h1 CRD  1 2015  4  1  4
+h2 APOL       7045 95  1  4
+h3 apollo11        100  100        0 0 2
+h4  1 2012  5 31  2 31 36 2012  5 31  2 35 45  2 0 0 0 1 0 2 0
+c0 0     532.0 std1 lpd apd2 orig
+c1 0 lpd  Nd-YAG 1064.00 10.00 100.00 100.0 0.5 1
+c2 0 apd2 APD-array 532.000 -1.00 30.0 100.0 ECL -1.0 16.00 90.0 1.4 none
+c3 0 orig Truetime_XL-DC Truetime-Wenzel_OXCO ACM_CS_PS7186H na 0.0
+11  9210.0000000 2.4123152612974 std1 2  249.0    244      19.1  -1.000  -1.000      -1.0  37.4 15
+20  9210.000  727.64 288.50   18 0
+40  9210.0000000 0 std1 5923 3050 -1.000 0.0 0.0    3.2 -1.000 -1.000 -1.0 3 0 15
+50 std1   19.1 -1.000 -1.000 -1.0 1
+00 run.refl.shots.thresh.yield.net 120531b.r0.s05000.t01.y278.n244
+00 SVN revision 632:643M
+00 LUN Gate width 9
+00 Run corresponds to longterm offsets date 120403
+00 Channel by channel offsets (in ps):
+00   0 -56 -234  94 145 -112 -350 -621 127  70  53 -159 169  60   0 123
+00 No 1st photon bias. No DAC correction. Fit result used to make NP
+00 Uncertainties inflated by 1.0 (scale factor), [10.0] (ps RSS)
+00 We recommend an uncertainty adjust: scale factor 2.5 OR RSS value 20 (ps)
+h8
+H9 
