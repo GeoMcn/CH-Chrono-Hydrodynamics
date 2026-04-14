@@ -93,6 +93,43 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 ### `CH_Gravity_Test.m` (§16.1, §18.3, §19.2)
 * **Function:** Models the planetary mass as a potential in an SS-BEC substrate. In Hysteresis Mode, it performs the 3-Act loading sequence.
 * **Result:** Proved the "Memory Gap"; the vacuum does not return to $X=0$ after a rupture, but settles into a new groove.
+* ## Simulation Protocol: CH_Gravity_Test.m (Forensic Audit)
+
+This script executes a three-act simulation to validate the mechanical properties of the SS-BEC substrate, specifically focusing on its rigidity and topological memory.
+
+#### **Act I: Stabilization**
+*Establishing the $n \approx 2.62$ State*
+
+* **Action:** The script initializes a 2D condensate with high stiffness (`Physics2D.g = 20000`) and introduces a mass potential representing the Earth-Moon barycenter.
+* **The Math:** It calculates the **Quantum Potential ($Q$)**, which defines the spatial "groove" or potential well where the planetary mass is seated.
+* **Result:** Identification of the initial **harmonic node ($n$)**. This corresponds to the pre-2009 state described in the paper, where the system is pinned between the 2nd and 3rd vacuum harmonics.
+
+#### **Act II: Rigidity Audit**
+*Testing the Elastic Limit*
+
+* **Action:** The script incrementally increases the mass stress ($M = 2.0, 4.0, 8.0$).
+* **The Physics:** This simulates **Mass-Recoil**. As the mass increases, the engine measures the structural deformation of the vacuum lattice (the shift in Trough Coordinate $X$).
+* **Result:**
+    * **Elastic Phase:** At lower mass levels, the lattice shift is minor and linear.
+    * **Rupture Phase:** At $M=8.0$, the shift becomes non-linear, representing the **Topological Rupture** where the vacuum substrate reaches its ultimate tensile strength and can no longer maintain its original geometry.
+
+#### **Act III: Hysteresis Audit**
+*The "Smoking Gun" for Vacuum Memory*
+
+* **Action:** This is the critical forensic component. It follows a non-linear loading loop:
+    1.  Initialize at Baseline ($M=2.0$).
+    2.  Increase to Peak Stress ($M=8.0$).
+    3.  Return to Baseline ($M=2.0$).
+* **The Logic:** If the vacuum were a simple fluid or perfectly elastic, the system would return to its original coordinate ($X$).
+* **Result:** The script demonstrates a **Permanent Topological Phase-Slip**. Because the vacuum is a Super-Solid with a quantized lattice structure, the system "snaps" into a higher-order groove ($n=3$) and remains there post-stress.
+
+#### **Forensic Outputs & Figures**
+
+1.  **Stage 1 Plot:** Visualizes the vacuum density ($\rho$) and the initial geometry of the gravitational potential well.
+2.  **Stage 2 (Rigidity Waterfall):** Displays the "well" moving and deforming as mass stress increases, mapping the movement toward the rupture threshold.
+3.  **Stage 3 (Hysteresis Loop):** The **Master Forensic Graph**. It plots the cyclic path of the system, visually quantifying the **"Memory Gap"**—the permanent spatial offset between the pre-stress and post-stress equilibrium states.
+
+-------------------------
 
 ### `CH_MultiBody_Lock.m` (§16.2)
 * **Function:** Simulates the Earth-Moon-Substrate as a single harmonic system.
