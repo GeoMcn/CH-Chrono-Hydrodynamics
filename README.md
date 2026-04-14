@@ -1,5 +1,4 @@
-# Quantized Orbital Refraction in a Super-Solid Vacuum: A Multi-Decadal Forensic Audit of the 2008–2009 Phase-Slip and Persistent Crystalline
-# Stasis.
+# Quantized Orbital Refraction in a Super-Solid Vacuum: A Multi-Decadal Forensic Audit of the 2008–2009 Phase-Slip and Persistent Crystalline Stasis.
 
 ## Forensic Pipeline Documentation
 
