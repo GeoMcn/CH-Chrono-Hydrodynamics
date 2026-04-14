@@ -90,6 +90,38 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 ## Phase VII: MATLAB/GPELab Simulation Suite
 **Objective:** Provide the mechanical "proof of concept" for a vacuum that can rupture and remember.
 
+## 🛠️ Global Dependencies
+
+Before running the scripts, ensure your environment meets the following requirements:
+
+* **Primary Engine:** MATLAB (R2020b or later).
+* **Required Toolbox:** [GPELab](https://www.mathworks.com/matlabcentral/fileexchange/48347-gpelab) (Gross-Pitaevskii Equation Laboratory).
+* **Path Configuration:** Ensure the following GPELab core files are in your MATLAB path:
+    * `Geometry2D_Var2d.m`
+    * `Method_Var2d.m`
+    * `Physics2D_Var2d.m`
+    * `Potential_Var2d.m`
+    * `GPELab2d.m`
+
+### 1. Numerical Manifold Simulations (Self-Contained)
+These scripts provide the theoretical and mechanical basis for the CH-Framework. They do not require external data files to execute.
+
+| File Name | Primary Forensic Function | Needs Data? | Forensic Result |
+| :--- | :--- | :---: | :--- |
+| `CH_MultiBody_lock.m` | Simulates Earth-Moon phase-locked bridge. | **NO** | Discovered the **"W-Well" potential**, proving gravity is a topological ring rather than a simple point-source pit. |
+| `CH_Wake_Visualization.m` | Simulates the 2009 "Galactic Storm" environment. | **NO** | Proved the existence of a **Stable Super-Critical Corridor** (the "Shock Wall") that maintains the new orbit. |
+| `ch_2009_rupture_event.m` | Models the 2009 Shear event and the resulting "Snap." | **NO** | Generated the **Mechanical Torque ($L_z$)** necessary for the observed 7.99 cm LLR refraction. |
+| `CH_Galactic_Wind_Distortion.m` | Analyzes "W-Well" distortion under steady wind. | **NO** | Measured the **Pressure Differential ($\Delta Q$)** required to trigger the 2009 topological snap. |
+| `CH_Phonon_Speed_Audit.m` | Measures signal propagation speed in the lattice. | **NO** | Confirmed **Super-Celerity ($175c$)**, explaining why the Earth and Moon moved in perfect synchronicity. |
+| `CH_Resonance_Alignment.m` | Tests stability limits against distance and $\alpha_{fs}$. | **NO** | Identified the **Topological Truth Peak** ($g=21,000, \xi=3.20$ nm) with **99.80% accuracy**. |
+| `CH_Sweep_Distances.m` | Sweeps distances to map quantized orbital grooves. | **NO** | Identified that the vacuum undergoes **Brittle Fracture** at specific thresholds, explaining the "jump" vs. "drift." |
+| `CH_Snap_Transition.m` | Simulates transition from metastable to integer states. | **NO** | Demonstrated **Integer Harmonic Capture**, where the Moon "snaps" to the nearest $n=3$ node. |
+| `CH_Gravit_Test_New.m` | Audits Rigidity, Resonance, and Hysteresis. | **NO** | Confirmed **Permanent Topological Phase-Slip**; the system retains a "memory" of the 2009 rupture event. |
+| `Energy_Release_Audit.m` | Calculates Joules released during the 2009 Snap. | **NO** | Matched latent energy discharge to the observed **$10^{-18}$ ns² thermal floor** of the GPS constellation. |
+
+
+
+
 ### `CH_Gravity_Test.m` (§16.1, §18.3, §19.2)
 * **Function:** This script executes a three-act simulation to validate the mechanical properties of the SS-BEC substrate, specifically focusing on its rigidity and topological memory.
 
@@ -118,59 +150,3 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
     3.  Return to Baseline ($M=2.0$).
 * **The Logic:** If the vacuum were a simple fluid or perfectly elastic, the system would return to its original coordinate ($X$).
 * **Result:** The script demonstrates a **Permanent Topological Phase-Slip**. Because the vacuum is a Super-Solid with a quantized lattice structure, the system "snaps" into a higher-order groove ($n=3$) and remains there post-stress.
-
-#### **Forensic Outputs & Figures**
-
-1.  **Stage 1 Plot:** Visualizes the vacuum density ($\rho$) and the initial geometry of the gravitational potential well.
-2.  **Stage 2 (Rigidity Waterfall):** Displays the "well" moving and deforming as mass stress increases, mapping the movement toward the rupture threshold.
-3.  **Stage 3 (Hysteresis Loop):** The **Master Forensic Graph**. It plots the cyclic path of the system, visually quantifying the **"Memory Gap"**—the permanent spatial offset between the pre-stress and post-stress equilibrium states.
-
--------------------------
-
-### `CH_MultiBody_Lock.m` (§16.2)
-* **Function:** Simulates the Earth-Moon-Substrate as a single harmonic system.
-* **Result:** Discovered the "W-Well" potential, where gravity is a topological ring rather than a simple point-source pit.
-
-### `CH_Snap_Transition.m` (§17.1)
-* **Function:** A dynamic time-evolution script that "thaws" the vacuum rigidity and watches the system relocate.
-* **Result:** Demonstrated the Integer Harmonic Capture, where the Moon "snaps" to the nearest $n=3$ node.
-
-### `CH_Sweep_Distances.m` (§18.1)
-* **Function:** Iteratively tests different orbital radii to find where the lattice breaks.
-* **Result:** Identified that the vacuum undergoes Brittle Fracture at specific stress thresholds, explaining why the 2009 shift was a jump rather than a drift.
-
-### `CH_Galactic_Wind_Distortion.m` (§18.4.1)
-* **Function:** Simulates the LISM (interstellar wind) flow over the W-Well.
-* **Result:** Measured the pressure differential ($\Delta Q$) required to trigger the 2009 snap.
-
-### `CH_2009_Rupture_Final.m` (§18.4.2)
-* **Function:** The "Storm" simulator. Introduces shear and damping.
-* **Result:** Generated the Mechanical Torque ($L_z$) necessary for the 7.99 cm refraction.
-
-### `CH_Phonon_Speed_Audit.m` (§18.5)
-* **Function:** Measures the speed of information (phonons) in the SS-BEC lattice.
-* **Result:** Confirmed Super-Celerity ($175c$), explaining why the Earth and Moon moved in perfect synchronicity.
-
-### `CH_Wake_Visualization.m` (§19.1)
-* **Function:** Generates 2D maps of the Mach Cone trailing the Earth.
-* **Result:** Proved the existence of a Stable Super-Critical Corridor (the "Shock Wall") that maintains the new orbit.
-
-### `CH_Resonance_Alignment.m` (§21.1)
-* **Function:** Performs the final sensitivity scan of the model against CODATA values.
-* **Result:** Identified the Topological Truth Peak ($g=21,000, \xi=3.20$ nm) with $99.80\%$ accuracy.
-
-### `Energy_Release_Audit.m` (§20.5)
-* **Function:** Integrates the total energy released by the lattice during the $W=24 \to 25$ shift.
-* **Result:** Matched the latent energy discharge to the observed $10^{-18}$ ns² thermal floor of the GPS constellation.
-
-
-File Name,Primary Forensic Function,Needs Data?,Forensic Result
-CH_MultiBody_lock.m,Simulates Earth-Moon phase-locked bridge.,NO,"Discovered the ""W-Well"" potential, proving gravity is a topological ring rather than a simple point-source pit."
-CH_Wake_Visualization.m,"Simulates the 2009 ""Galactic Storm"" environment.",NO,"Proved the existence of a Stable Super-Critical Corridor (the ""Shock Wall"") that maintains the new orbit."
-ch_2009_rupture_event.m,"Models the 2009 Shear event and the resulting ""Snap.""",NO,Generated the Mechanical Torque (Lz​) necessary for the observed 7.99 cm LLR refraction.
-CH_Galactic_Wind_Distortion.m,"Analyzes ""W-Well"" distortion under steady wind.",NO,Measured the Pressure Differential (ΔQ) required to trigger the 2009 topological snap.
-CH_Phonon_Speed_Audit.m,Measures signal propagation speed in the lattice.,NO,"Confirmed Super-Celerity (175c), explaining why the Earth and Moon moved in perfect synchronicity."
-CH_Resonance_Alignment.m,Tests stability limits against distance and αfs​.,NO,"Identified the Topological Truth Peak (g=21,000,ξ=3.20 nm) with 99.80% accuracy."
-CH_Sweep_Distances.m,Sweeps distances to map quantized orbital grooves.,NO,"Identified that the vacuum undergoes Brittle Fracture at specific thresholds, explaining the ""jump"" vs. ""drift."""
-CH_Snap_Transition.m,Simulates transition from metastable to integer states.,NO,"Demonstrated Integer Harmonic Capture, where the Moon ""snaps"" to the nearest n=3 node."
-CH_Gravit_Test_New.m,"Audits Rigidity, Resonance, and Hysteresis.",NO,"Confirmed Permanent Topological Phase-Slip; the system retains a ""memory"" of the 2009 rupture event."
