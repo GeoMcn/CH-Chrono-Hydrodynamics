@@ -91,11 +91,7 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 **Objective:** Provide the mechanical "proof of concept" for a vacuum that can rupture and remember.
 
 ### `CH_Gravity_Test.m` (§16.1, §18.3, §19.2)
-* **Function:** Models the planetary mass as a potential in an SS-BEC substrate. In Hysteresis Mode, it performs the 3-Act loading sequence.
-* **Result:** Proved the "Memory Gap"; the vacuum does not return to $X=0$ after a rupture, but settles into a new groove.
-* ## Simulation Protocol: CH_Gravity_Test.m (Forensic Audit)
-
-This script executes a three-act simulation to validate the mechanical properties of the SS-BEC substrate, specifically focusing on its rigidity and topological memory.
+* **Function:** This script executes a three-act simulation to validate the mechanical properties of the SS-BEC substrate, specifically focusing on its rigidity and topological memory.
 
 #### **Act I: Stabilization**
 *Establishing the $n \approx 2.62$ State*
