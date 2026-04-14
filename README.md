@@ -6,7 +6,7 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 
 ---
 
-## Phase I: Baseline & Historical Recovery
+## Phase I: Track Frequency & VTI
 **Objective:** Establish the "Laminar" (fluid) ground state of the vacuum before modern turbulence.
 
 ### `vortex_hunter.py` (§10.3)
