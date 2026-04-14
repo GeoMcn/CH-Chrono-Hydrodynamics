@@ -22,12 +22,8 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 * **Function:** Ingests ultra-high-resolution $05$s GPS clock data. It maps magnitude variations on an hour-by-hour basis to find harmonic bands.
 * **Result:** Identified discrete energy bands in vacuum density, proving the background noise is structured rather than random.
 
-### `vortex_hunter_global.py` (§9.2, §10.4)
-* **Function:** A multi-threaded version of the hunter suite. It automates the Vacuum Turbulence Index (VTI) calculation by measuring the Full Width at Half Maximum (FWHM) of spectral peaks.
-* **Result:** Provided the longitudinal VTI trend, showing the jump from $6.4$ (stable) to $52.51$ (peak stress).
-
 ### `vortex_hunter_yearly_average.py` (§11.2, §10.4)
-* **Function:** Aggregates daily/monthly spectral data into yearly "Forensic Snapshots."
+* **Function:** A multi-threaded version of the hunter suite. It automates the Vacuum Turbulence Index (VTI) calculation by measuring the Full Width at Half Maximum (FWHM) of spectral peaks. Aggregates daily/monthly spectral data into yearly "Forensic Snapshots."
 * **Result:** Captured the 2013 "Phase-Slip Migration" where the frequency hit a transient high of $547.87$ c/y.
 
 ---
