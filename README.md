@@ -33,7 +33,7 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 
 ### `vortex_hunter_seperator.py` (§10.1)
 * **Function:** Separates Lunar Laser Ranging (LLR) residuals by firing station (e.g., McDonald Observatory vs. Observatoire de la Côte d'Azur).
-* **Result:** Confirmed the 2009 anomaly was consistent across all global stations, eliminating local instrumentation error.
+* **Result:** Confirmed the 2009 anomaly was consistent across global stations, eliminating local instrumentation error.
 
 ### `Residuals_Forensic_Verification.py` (§10.1)
 * **Function:** Performs a statistical T-test and variance check on the "Pre-Snap" vs. "Post-Snap" LLR data.
