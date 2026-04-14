@@ -89,6 +89,7 @@ This document provides a comprehensive overview of the scripts, diagnostics, and
 
 ## Phase VII: MATLAB/GPELab Simulation Suite
 **Objective:** Provide the mechanical "proof of concept" for a vacuum that can rupture and remember.
+**Something to Note:** Matlab simulations may be CPU intensive, this sometimes leads to hanging (what looks like freezing) while the script loads final graphs.
 
 ## 🛠️ Global Dependencies
 
